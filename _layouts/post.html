@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="lines-grid-post">
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+</div>
+
+<a class="post_back" href="javascript:history.go(-1)">Back</a>
+
+<section class="section post">
+  <div class="blog_item">
+    <span class="blog_tag">{{ page.tag }}</span>
+    <span class="blog_title">{{ page.title }}</span>
+    <span class="blog_tips">{{ page.date | date: "%Y · %m · %d" }}&nbsp;&nbsp;&nbsp;{{ page.tips }}</span>
+  </div>
+  <div class="post-wrapper">
+    {% if page.cover %}
+    <p>
+      <img class="blog_header_img" src="/assets/images/post/{{ page.date | date: "%Y-%m-%d" }}/{{ page.cover }}">
+    </p>
+    {% endif %}
+    {{ content }}
+  </div>
+  <div class="post_pagination">
+    {% if page.previous.url %}
+      <a class="previous"href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
+      上一篇<br><span>{{page.previous.title}}</span>
+      </a>
+    {% endif %}
+
+    {% if page.next.url %}
+      <a class="next"href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
+      下一篇<br><span>{{page.next.title}}</span>
+      </a>
+    {% endif %}
+  </div>
+</section>

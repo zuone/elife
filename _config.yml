@@ -1,0 +1,43 @@
+# Site settings
+title:     zuonx - design effective digital products
+email:     hjsfzzz@gmail.com
+description: "Design effective digital products."
+keywords: "zuonx, 左子祯, Zuo Zizhen, designer, studio, blog, personal site, freelancer"
+author:   "Zuo Zizhen"
+url: "https://zuonx.com"
+baseurl: ""
+
+# SCSS settings
+sass:
+  sass_dir: assets/stylesheets/_libs
+
+# SNS settings
+RSS: ture
+dribbble_username:  zuonx
+behance_username:   zuonx
+pinterest_username: zuozizhen
+github_username:    zuonx
+instagram_username: zuozizhen
+zhihu_username:     ZiJen
+
+# Paginate settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 5
+paginate_path: "blog/page:num"
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true
+
+# plugins
+plugins: [jekyll-paginate]
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+# Analytics settings
+
+ga_track_id: 'UA-111351144-1'

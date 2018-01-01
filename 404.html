@@ -1,0 +1,35 @@
+---
+layout: default
+description: "This page seems to be missing"
+---
+
+<style type="text/css">
+    .menu-back {
+			background-color: rgba(0,0,0,.93) !important;
+		}
+    .tooltip__content_img {
+      background-size:cover;
+      width: 460px;
+      height: 260px;
+    }
+    @media only screen and (max-width: 1600px) {
+      .tooltip__content_img {
+        background-size: cover;
+        width: 180px;
+        height: 126px;
+      }
+    }
+</style>
+
+<div class="section-block padding-top-bottom">
+  <div class="container">
+    <div class="eight columns">
+      <!-- <h1>I'm currently looking for full-time product design opportunities. Take my resume here</h1> -->
+      <h1>{{ page.description }}</h1>
+    </div>
+  </div>
+</div>
+
+<script>
+	document.body.classList.add('page-fullscreen');
+</script>

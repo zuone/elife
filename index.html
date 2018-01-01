@@ -1,0 +1,199 @@
+---
+layout: default
+title: zuonx - design effective digital products
+description: Do one thing for a lifetime
+---
+<div class="lines-grid">
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+  <i class="lines_i"></i>
+</div>
+<div id="fullpage">
+  <section class="section main">
+    <div class="logo_o"><i></i></div>
+    <div class="content">
+      <div class="main_title">
+        Design<br>
+        Effective Digital</br>
+        Products.
+      </div>
+      <div class="main_pic">
+        <img src="assets/images/main/pic-z.svg" alt="" draggable="false" class="main_pic_z">
+        <img src="assets/images/main/pic-z-hover.svg" alt="" draggable="false" class="main_pic_z_hover">
+      </div>
+    </div>
+    <div class="main_scroll">
+      <div class="c-scrolldown">
+          <div class="c-line"></div>
+        </div>
+      <span>SCROLL TO EXPLORE</span>
+    </div>
+  </section>
+  <section class="section about">
+    <div class="content">
+      <div class="section_title">About</div>
+      <div class="title">
+        Hello!<br>
+        I'm Zuo Zizhen.
+      </div>
+      <p class="about_desc one">
+        Now I'm a freelancer in Beijing. I'm good at integrating my skills together to create more power, such as design, code and inspiration from different areas of design, I like the process of creation.
+      </p>
+      <p class="about_desc two">
+        I think a great product needs to be best in all aspects. In the process, the collaboration and coordination of various links, such as design and code, are needed. My advantage is to have compound skills. In the process of design, we can fully consider the feasibility of development, and control the design quality from the aspects of products and interaction.My inspiration comes from architecture and nature.
+      </p>
+      <div class="service_item">
+        <div class="item_title">SERVICE</div>
+        <div class="item_desc">
+          <span>Web Interfaces</span>
+          <span>Frontend Development</span>
+          <span>App Interface</span>
+          <span>Digital Branding</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section case">
+    <div class="content">
+      <div class="case_synopsis">
+        <div class="case_category">SASS SERVICE</div>
+        <a href="https://www.behance.net/gallery/58498171/Moment" class="case_title">Cachemoment</a>
+        <span class="line"></span>
+        <p class="case_desc">
+          To provide users with large data driven large data driven intelligent cloud acceleration, global CDN solutions,
+          To provide users with large data driven large data driven</p>
+        <div class="case_tag">
+          <span class="tag">
+            <span class="tag_title">SERVICE</span>
+            <span class="tag_desc">Web Interfaces & Development & Digital Branding</span>
+          </span>
+          <!-- <span class="tag">
+            <span class="tag_title">LINK</span>
+            <a href="https://www.cachemoment.com" class="tag_desc">CacheMoment</a>
+          </span> -->
+        </div>
+      </div>
+      <a href="https://www.behance.net/gallery/58498171/Moment" class="case_cover">
+        <img src="assets/images/main/case-1.png" alt="">
+      </a>
+    </div>
+  </section>
+  <!-- <section class="section case">
+    <div class="content">
+      <div class="case_synopsis">
+        <div class="case_category">Smart home</div>
+        <a href="https://www.behance.net/gallery/58498171/Moment" class="case_title">Presen</a>
+        <span class="line"></span>
+        <p class="case_desc">
+          Presen is a Internet Co that provides smart home services.</p>
+        <div class="case_tag">
+          <span class="tag">
+            <span class="tag_title">SERVICE</span>
+            <span class="tag_desc">Web Interfaces & App Interfaces</span>
+          </span>
+        </div>
+      </div>
+      <a href="https://www.behance.net/gallery/58498171/Moment" class="case_cover">
+        <img src="assets/images/main/case-2.png" alt="">
+      </a>
+    </div>
+  </section> -->
+  <section class="section case">
+    <div class="content">
+      <div class="case_synopsis">
+        <div class="case_category">Online training</div>
+        <a href="https://www.behance.net/gallery/58498171/Moment" class="case_title">Petme</a>
+        <span class="line"></span>
+        <p class="case_desc">
+          Petme is a comprehensive service platform for pet owners to meet the needs of pet owners, with pet social services and services as the core to meet the needs of pet lovers social, medical and other needs.</p>
+        <div class="case_tag">
+          <span class="tag">
+            <span class="tag_title">SERVICE</span>
+            <span class="tag_desc">Digital Branding</span>
+          </span>
+        </div>
+      </div>
+      <a href="https://www.behance.net/gallery/58498171/Moment" class="case_cover">
+        <img src="assets/images/main/case-3.png" alt="">
+      </a>
+    </div>
+  </section>
+  <section class="section essay">
+    <div class="content">
+      <div class="section_title">Last Essays</div>
+      <div class="title">
+        <span>Reading and thinking.</span>
+        <span>About everything I know about the world.</span>
+      </div>
+      {% for post in site.posts limit:2 %}
+      <a href="{{ post.url }}" class="blog_item">
+        <span class="blog_date">{{ post.date | date: "%Y · %m · %d" }}</span>
+        <span class="blog_tag">
+          {% for tag in post.tags limit:3 %}<span>{{tag}}</span>{% endfor %}
+        </span>
+        <span class="blog_title">{{ post.title }}</span>
+        <div class="blog_excerpt">{{ post.excerpt }}</div>
+      </a>
+      {% endfor %}
+      <a href="{{ site.baseurl }}/blog" class="blog_more">View More</a>
+    </div>
+  </section>
+  <section class="section story">
+    <div class="content">
+      <div class="section_title">Story</div>
+      <div class="title">
+        All endings are beginnings.<br>
+        We just don't know it at the time.
+      </div>
+      <div id="instagram"></div>
+    </div>
+  </section>
+  <section class="section contact">
+    <div class="content">
+      <div class="section_title">Contact</div>
+      <div class="title">
+        Keep curiosity.<br>
+        Let's create great products together!
+      </div>
+      <div class="contact_content">
+        <div class="contact_item">
+          <div class="item_title">SAY HI</div>
+          <a class="item_desc" href="mailto:{{site.email}}">{{ site.email }}</a>
+        </div>
+        <div class="contact_item">
+          <div class="item_title">FOLLOW</div>
+          <a class="item_desc" href="https://dribbble.com/{{ site.dribbble_username }}" target="_blank">Dribbble</a>
+          <a class="item_desc" href="https://www.behance.net/{{ site.behance_username }}" target="_blank">Behance</a>
+          <a class="item_desc" href="https://github.com/{{ site.github_username }}" target="_blank">Github</a>
+          <a class="item_desc" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank">Instagram</a>
+          <a class="item_desc" href="https://zhihu.com/people/{{ site.zhihu_username }}" target="_blank">Zhihu</a>
+        </div>
+        <div class="contact_item">
+          <div class="item_title">China</div>
+          <span class="item_desc">
+            Beijing&nbsp;&nbsp;<span class="js--time" data-timezone="Asia/Choibalsan"></span>
+          </span>
+          </span>
+        </div>
+        <div class="contact_item">
+          <div class="item_title">Serive</div>
+          <span class="item_desc">Web Interfaces</span>
+          <span class="item_desc">Frontend Development</span>
+          <span class="item_desc">App Interface</span>
+          <span class="item_desc">Digital Branding</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script src="{{ site.baseurl }}/assets/javascripts/fullPage.min.js"></script>
+<script src="{{ site.baseurl }}/assets/javascripts/instagram.min.js"></script>
+<script src="{{ site.baseurl }}/assets/javascripts/moment.min.js"></script>
+<script src="{{ site.baseurl }}/assets/javascripts/moment-timezone.min.js"></script>
