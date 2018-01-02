@@ -1,199 +1,328 @@
----
-layout: default
-title: zuonx - design effective digital products
-description: Do one thing for a lifetime
----
-<div class="lines-grid">
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-  <i class="lines_i"></i>
-</div>
-<div id="fullpage">
-  <section class="section main">
-    <div class="logo_o"><i></i></div>
-    <div class="content">
-      <div class="main_title">
-        Design<br>
-        Effective Digital</br>
-        Products.
-      </div>
-      <div class="main_pic">
-        <img src="assets/images/main/pic-z.svg" alt="" draggable="false" class="main_pic_z">
-        <img src="assets/images/main/pic-z-hover.svg" alt="" draggable="false" class="main_pic_z_hover">
-      </div>
-    </div>
-    <div class="main_scroll">
-      <div class="c-scrolldown">
-          <div class="c-line"></div>
-        </div>
-      <span>SCROLL TO EXPLORE</span>
-    </div>
-  </section>
-  <section class="section about">
-    <div class="content">
-      <div class="section_title">About</div>
-      <div class="title">
-        Hello!<br>
-        I'm Zuo Zizhen.
-      </div>
-      <p class="about_desc one">
-        Now I'm a freelancer in Beijing. I'm good at integrating my skills together to create more power, such as design, code and inspiration from different areas of design, I like the process of creation.
-      </p>
-      <p class="about_desc two">
-        I think a great product needs to be best in all aspects. In the process, the collaboration and coordination of various links, such as design and code, are needed. My advantage is to have compound skills. In the process of design, we can fully consider the feasibility of development, and control the design quality from the aspects of products and interaction.My inspiration comes from architecture and nature.
-      </p>
-      <div class="service_item">
-        <div class="item_title">SERVICE</div>
-        <div class="item_desc">
-          <span>Web Interfaces</span>
-          <span>Frontend Development</span>
-          <span>App Interface</span>
-          <span>Digital Branding</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section case">
-    <div class="content">
-      <div class="case_synopsis">
-        <div class="case_category">SASS SERVICE</div>
-        <a href="https://www.behance.net/gallery/58498171/Moment" class="case_title">Cachemoment</a>
-        <span class="line"></span>
-        <p class="case_desc">
-          To provide users with large data driven large data driven intelligent cloud acceleration, global CDN solutions,
-          To provide users with large data driven large data driven</p>
-        <div class="case_tag">
-          <span class="tag">
-            <span class="tag_title">SERVICE</span>
-            <span class="tag_desc">Web Interfaces & Development & Digital Branding</span>
-          </span>
-          <!-- <span class="tag">
-            <span class="tag_title">LINK</span>
-            <a href="https://www.cachemoment.com" class="tag_desc">CacheMoment</a>
-          </span> -->
-        </div>
-      </div>
-      <a href="https://www.behance.net/gallery/58498171/Moment" class="case_cover">
-        <img src="assets/images/main/case-1.png" alt="">
-      </a>
-    </div>
-  </section>
-  <!-- <section class="section case">
-    <div class="content">
-      <div class="case_synopsis">
-        <div class="case_category">Smart home</div>
-        <a href="https://www.behance.net/gallery/58498171/Moment" class="case_title">Presen</a>
-        <span class="line"></span>
-        <p class="case_desc">
-          Presen is a Internet Co that provides smart home services.</p>
-        <div class="case_tag">
-          <span class="tag">
-            <span class="tag_title">SERVICE</span>
-            <span class="tag_desc">Web Interfaces & App Interfaces</span>
-          </span>
-        </div>
-      </div>
-      <a href="https://www.behance.net/gallery/58498171/Moment" class="case_cover">
-        <img src="assets/images/main/case-2.png" alt="">
-      </a>
-    </div>
-  </section> -->
-  <section class="section case">
-    <div class="content">
-      <div class="case_synopsis">
-        <div class="case_category">Online training</div>
-        <a href="https://www.behance.net/gallery/58498171/Moment" class="case_title">Petme</a>
-        <span class="line"></span>
-        <p class="case_desc">
-          Petme is a comprehensive service platform for pet owners to meet the needs of pet owners, with pet social services and services as the core to meet the needs of pet lovers social, medical and other needs.</p>
-        <div class="case_tag">
-          <span class="tag">
-            <span class="tag_title">SERVICE</span>
-            <span class="tag_desc">Digital Branding</span>
-          </span>
-        </div>
-      </div>
-      <a href="https://www.behance.net/gallery/58498171/Moment" class="case_cover">
-        <img src="assets/images/main/case-3.png" alt="">
-      </a>
-    </div>
-  </section>
-  <section class="section essay">
-    <div class="content">
-      <div class="section_title">Last Essays</div>
-      <div class="title">
-        <span>Reading and thinking.</span>
-        <span>About everything I know about the world.</span>
-      </div>
-      {% for post in site.posts limit:2 %}
-      <a href="{{ post.url }}" class="blog_item">
-        <span class="blog_date">{{ post.date | date: "%Y · %m · %d" }}</span>
-        <span class="blog_tag">
-          {% for tag in post.tags limit:3 %}<span>{{tag}}</span>{% endfor %}
-        </span>
-        <span class="blog_title">{{ post.title }}</span>
-        <div class="blog_excerpt">{{ post.excerpt }}</div>
-      </a>
-      {% endfor %}
-      <a href="{{ site.baseurl }}/blog" class="blog_more">View More</a>
-    </div>
-  </section>
-  <section class="section story">
-    <div class="content">
-      <div class="section_title">Story</div>
-      <div class="title">
-        All endings are beginnings.<br>
-        We just don't know it at the time.
-      </div>
-      <div id="instagram"></div>
-    </div>
-  </section>
-  <section class="section contact">
-    <div class="content">
-      <div class="section_title">Contact</div>
-      <div class="title">
-        Keep curiosity.<br>
-        Let's create great products together!
-      </div>
-      <div class="contact_content">
-        <div class="contact_item">
-          <div class="item_title">SAY HI</div>
-          <a class="item_desc" href="mailto:{{site.email}}">{{ site.email }}</a>
-        </div>
-        <div class="contact_item">
-          <div class="item_title">FOLLOW</div>
-          <a class="item_desc" href="https://dribbble.com/{{ site.dribbble_username }}" target="_blank">Dribbble</a>
-          <a class="item_desc" href="https://www.behance.net/{{ site.behance_username }}" target="_blank">Behance</a>
-          <a class="item_desc" href="https://github.com/{{ site.github_username }}" target="_blank">Github</a>
-          <a class="item_desc" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank">Instagram</a>
-          <a class="item_desc" href="https://zhihu.com/people/{{ site.zhihu_username }}" target="_blank">Zhihu</a>
-        </div>
-        <div class="contact_item">
-          <div class="item_title">China</div>
-          <span class="item_desc">
-            Beijing&nbsp;&nbsp;<span class="js--time" data-timezone="Asia/Choibalsan"></span>
-          </span>
-          </span>
-        </div>
-        <div class="contact_item">
-          <div class="item_title">Serive</div>
-          <span class="item_desc">Web Interfaces</span>
-          <span class="item_desc">Frontend Development</span>
-          <span class="item_desc">App Interface</span>
-          <span class="item_desc">Digital Branding</span>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-focus" lang="en">
+<!--<![endif]-->
 
-<script src="{{ site.baseurl }}/assets/javascripts/fullPage.min.js"></script>
-<script src="{{ site.baseurl }}/assets/javascripts/instagram.min.js"></script>
-<script src="{{ site.baseurl }}/assets/javascripts/moment.min.js"></script>
-<script src="{{ site.baseurl }}/assets/javascripts/moment-timezone.min.js"></script>
+<head>
+  <meta charset="utf-8">
+
+  <title>OneUI - Admin Dashboard Template &amp; UI Framework</title>
+
+  <meta name="description" content="OneUI - Admin Dashboard Template & UI Framework created by pixelcave and published on Themeforest">
+  <meta name="author" content="pixelcave">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Stylesheets -->
+  <!-- Bootstrap and OneUI CSS framework -->
+  <link rel="stylesheet" id="css-main" href="assets/css/oneui.min.css">
+  <script src="assets/js/jQuery.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Page Container -->
+  <div id="page-container" class="side-scroll main-layout">
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar-main">
+      <!-- Sidebar Scroll Container -->
+      <div class="sidebar-space">
+        <span class="logo"><i></i></span>
+        <ul>
+          <li id="space-btn" class="space-main current" data-tab="tab-1"><i></i></li>
+          <li id="space-btn" class="space-resource" data-tab="tab-2"><i></i></li>
+          <li id="space-btn" class="space-tool" data-tab="tab-3"><i></i></li>
+          <li id="space-btn" class="space-money" data-tab="tab-4"><i></i></li>
+        </ul>
+      </div>
+      <div id="sidebar-scroll" class="sidebar-sub">
+        <div id="tab-1" class="sidebar-content current">
+          <span class="category">Service</span>
+          <ul class="sub-link">
+            <li>
+              <a href="https://app.astralapp.com/dashboard"  target="_blank">Astral</a>
+              <span class="tag">Tab</span>
+            </li>
+          </ul>
+          <span class="category">News</span>
+          <ul class="sub-link">
+            <li>
+              <a href="https://betalist.com" target="_blank">BetaList</a>
+              <span class="tag">Tab</span>
+            </li>
+
+            <li>
+              <a href="https://www.producthunt.com" onclick="return false;" class="link">Product Hunt</a>
+            </li>
+            <li>
+              <a href="https://www.reddit.com" target="_blank">Reddit</a>
+              <span class="tag">Tab</span>
+            </li>
+            <li>
+              <a href="https://www.v2ex.com" target="_blank">V2EX</a>
+              <span class="tag">Tab</span>
+            </li>
+          </ul>
+          <span class="category">Inspiration</span>
+          <ul class="sub-link">
+            <li>
+              <a href="http://www.ui.cn" target="_blank">UI中国</a>
+              <span class="tag">Tab</span>
+            </li>
+            <li>
+              <a href="http://reeoo.com" onclick="return false;" class="link">Reeoo</a>
+            </li>
+            <li>
+              <a href="http://www.collectui.com" onclick="return false;" class="link">Collectui</a>
+            </li>
+            <li>
+              <a href="https://www.awwwards.com" target="_blank">Awwwards</a>
+              <span class="tag">Tab</span>
+            </li>
+            <li>
+              <a href="https://www.siteinspire.com" target="_blank">SiteInspire</a>
+              <span class="tag">Tab</span>
+            </li>
+            <li>
+              <a href="http://www.collectui.com" onclick="return false;" class="link">Collectui</a>
+            </li>
+            <li>
+              <a href="http://www.logobook.com" onclick="return false;" class="link">Logobook</a>
+            </li>
+            <li>
+              <a href="http://instantlogosearch.com" target="_blank">Instant Logo</a>
+              <span class="tag">Tab</span>
+            </li>
+            <li>
+              <a href="http://iosicongallery.com/" onclick="return false;" class="link">App Icon</a>
+            </li>
+            <li>
+              <a href="http://findguidelin.es" onclick="return false;" class="link">Guidelines</a>
+            </li>
+          </ul>
+        </div>
+        <div id="tab-2" class="sidebar-content">
+          <span class="category">Photos</span>
+          <ul class="sub-link">
+            <li>
+              <a href="https://everypixel.com/search?q=space&stocks_type=free&meaning=&media_type=0&page=1" onclick="return false;" class="link">Everypixel</a>
+            </li>
+            <li>
+              <a href="http://www.sozai-page.com/index.html" onclick="return false;" class="link">Sozai-page</a>
+            </li>
+          </ul>
+          <span class="category">Icons</span>
+          <ul class="sub-link">
+            <li>
+              <a href="https://www.flaticon.com" onclick="return false;" class="link">Flaticon</a>
+            </li>
+            <li>
+              <a href="https://glyphsearch.com" onclick="return false;" class="link">GlyphSearch</a>
+            </li>
+            <li>
+              <a href="http://www.iconfont.cn" target="_blank">Iconfont</a>
+              <span class="tag">Tab</span>
+            </li>
+          </ul>
+          <span class="category">Fonts</span>
+          <ul class="sub-link">
+            <li>
+              <a href="https://www.fontsquirrel.com" onclick="return false;" class="link">Font Squirrel</a>
+            </li>
+            <li>
+              <a href="https://www.freejapanesefont.com" onclick="return false;" class="link">Japanese Font</a>
+            </li>
+          </ul>
+          <span class="category">Vector</span>
+          <ul class="sub-link">
+            <li>
+              <a href="https://www.vecteezy.com" onclick="return false;" class="link">Vecteezy</a>
+            </li>
+          </ul>
+          <span class="category">Patterns</span>
+          <ul class="sub-link">
+            <li>
+              <a href="http://thepatternlibrary.com" onclick="return false;" class="link">Pattern Library</a>
+            </li>
+            <li>
+              <a href="https://www.toptal.com/designers/subtlepatterns/" onclick="return false;" class="link">Subtle Patterns</a>
+            </li>
+            <li>
+              <a href="http://www.hituyu.com" onclick="return false;" class="link">Tuyu</a>
+            </li>
+          </ul>
+          <span class="category">Sounds</span>
+          <ul class="sub-link">
+            <li>
+              <a href="https://www.youtube.com/audiolibrary/music" target="_blank">Youtube Audio</a>
+              <span class="tag">Tab</span>
+            </li>
+            <li>
+              <a href="http://soundscrate.com" onclick="return false;" class="link">Sound Crate</a>
+            </li>
+          </ul>
+          <span class="category">Videos</span>
+          <ul class="sub-link">
+            <li>
+              <a href="https://videos.pexels.com" onclick="return false;" class="link">Pexels</a>
+            </li>
+            <li>
+              <a href="http://www.coverr.co" class="link" target="_blank">Coverr</a>
+              <span class="tag">Tab</span>
+            </li>
+          </ul>
+          <span class="category">Others</span>
+          <ul class="sub-link">
+            <li>
+              <a href="https://templated.co" onclick="return false;" class="link">Templated</a>
+            </li>
+            <li>
+              <a href="https://smartmockups.com" class="link" target="_blank">Smartmockups</a>
+            </li>
+          </ul>
+        </div>
+        <div id="tab-3" class="sidebar-content">
+          <span class="category">CSS</span>
+          <ul class="sub-link">
+            <li>
+              <a href="https://www.cssmatic.com/gradient-generator" onclick="return false;" class="link">Gradient</a>
+            </li>
+            <li>
+              <a href="https://www.cssmatic.com/box-shadow" onclick="return false;" class="link">Shadow</a>
+            </li>
+            <li>
+              <a href="https://www.cssfilters.co" onclick="return false;" class="link">CSS Filters</a>
+            </li>
+          </ul>
+          <span class="category">Color</span>
+          <ul class="sub-link">
+            <li>
+              <a href="http://www.peise.net/tools/web/" onclick="return false;" class="link">Peise</a>
+            </li>
+            <li>
+              <a href="https://coolors.co/7f1f3a-ff89a4-fd446b-823951-ca365c" onclick="return false;" class="link">Coolors</a>
+            </li>
+          </ul>
+          <span class="category">UI</span>
+          <ul class="sub-link">
+            <li>
+              <a href="https://uinames.com" onclick="return false;" class="link">UInames</a>
+            </li>
+            <li>
+              <a href="http://www.shejidaren.com/examples/tools/golden-ratio/index.html" onclick="return false;" class="link">黄金比计算</a>
+            </li>
+            <li>
+              <a href="https://invoicetemplate.co/free-invoice-template" target="_blank">Invoice</a>
+            </li>
+          </ul>
+          <span class="category">Document</span>
+          <ul class="sub-link">
+            <li>
+                <a href="http://optimizilla.com/zh/" onclick="return false;" class="link">Optimizilla</a>
+            </li>
+            <li>
+                <a href="https://foxyutils.com/zh/" onclick="return false;" class="link">FoxyUtils</a>
+            </li>
+            <li>
+                <a href="https://convertio.co/zh/" onclick="return false;" class="link">Convertio</a>
+            </li>
+          </ul>
+          <span class="category">Others</span>
+          <ul class="sub-link">
+            <li>
+              <a href="http://www.atool.org" onclick="return false;" class="link">ATool</a>
+            </li>
+            <li>
+              <a href="http://www.cmd5.com" onclick="return false;" class="link">CMD5</a>
+            </li>
+            <li>
+              <a href="http://www.xuanpai.com" onclick="return false;" class="link">玄派</a>
+            </li>
+          </ul>
+        </div>
+        <div id="tab-4" class="sidebar-content">
+          <span class="category">News</span>
+          <ul class="sub-link">
+            <li>
+              <a href="https://xueqiu.com" onclick="return false;" class="link">雪球</a>
+            </li>
+            <li>
+              <a href="https://www.jin10.com" onclick="return false;" class="link">金十数据</a>
+            </li>
+          </ul>
+          <span class="category">Coins</span>
+          <ul class="sub-link">
+            <li>
+              <a href="https://coinmarketcap.com/zh/"  onclick="return false;" class="link">Coin Market Cap</a>
+            </li>
+            <li>
+              <a href="https://www.coinbase.com/charts" target="_blank">Coinbase Chart</a>
+              <span class="tag">Tab</span>
+            </li>
+            <li>
+              <a href="https://www.binance.com/tradeDetail.html?symbol=AMB_BTC" target="_blank">Binance Chart</a>
+              <span class="tag">Tab</span>
+            </li>
+            <li>
+              <a href="https://www.bitfinex.com" target="_blank">BitFinex</a>
+              <span class="tag">Tab</span>
+            </li>
+            <li>
+              <a href="https://www.coincola.com" target="_blank">CoinCola</a>
+              <span class="tag">Tab</span>
+            </li>
+            <li>
+              <a href="https://www.kucoin.com/#/markets" target="_blank">KuCoin</a>
+              <span class="tag">Tab</span>
+            </li>
+          </ul>
+          <span class="category">UI</span>
+          <ul class="sub-link">
+            <li>
+              <a href="https://uinames.com" onclick="return false;" class="link">UInames</a>
+            </li>
+            <li>
+              <a href="http://www.shejidaren.com/examples/tools/golden-ratio/index.html" onclick="return false;" class="link">黄金比计算</a>
+            </li>
+            <li>
+              <a href="https://invoicetemplate.co/free-invoice-template" target="_blank">Invoice</a>
+            </li>
+          </ul>
+          <span class="category">Document</span>
+          <ul class="sub-link">
+            <li>
+                <a href="http://optimizilla.com/zh/" onclick="return false;" class="link">Optimizilla</a>
+            </li>
+            <li>
+                <a href="https://foxyutils.com/zh/" onclick="return false;" class="link">FoxyUtils</a>
+            </li>
+            <li>
+                <a href="https://convertio.co/zh/" onclick="return false;" class="link">Convertio</a>
+            </li>
+          </ul>
+          <span class="category">Others</span>
+          <ul class="sub-link">
+            <li>
+              <a href="http://www.atool.org" onclick="return false;" class="link">ATool</a>
+            </li>
+            <li>
+              <a href="http://www.cmd5.com" onclick="return false;" class="link">CMD5</a>
+            </li>
+            <li>
+              <a href="http://www.xuanpai.com" onclick="return false;" class="link">玄派</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="iframe-box">
+      <iframe name="fame" id="fame" src="welcome.html" style="display: block; height: 100%; width: 100%;" frameborder="0" class="fame-bg"></iframe>
+    </div>
+  </div>
+
+  <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+  <script src="assets/js/oneui.min.js"></script>
+</body>
+
+</html>
