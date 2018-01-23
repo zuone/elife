@@ -10,8 +10,8 @@ html, body {
 }
 
 body {
-  font-family: 'Sofia Pro', 'Montserrat', "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-  font-size: 14px;
+  font-family: "Avenir", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-size: 13px;
   color: #222C3C;
   background-color: #f5f5f5
 }
@@ -21,7 +21,8 @@ body {
 }
 
 a {
-  color: #B7C0CD;
+  color: #9AA4BD;
+  font-weight: 400;
   text-decoration: none;
   -webkit-transition: color .12s ease-out;
   transition: color .12s ease-out
@@ -77,7 +78,7 @@ a:hover.link-effect:before, a:focus.link-effect:before {
 .iframe-box {
   display: block;
   height: 100%;
-  width: calc(100% - 338px);
+  width: calc(100% - 308px);
   right: 0;
   position: absolute;
 }
@@ -86,13 +87,13 @@ a:hover.link-effect:before, a:focus.link-effect:before {
 }
 .sidebar-main {
   display: grid;
-  grid-template-columns: 88px 250px;
+  grid-template-columns: 88px 220px;
   height: 100%;
   position: fixed;
 }
 .sidebar-space {
   height: 100%;
-  background-color: #1D2531;
+  background-color: #13171F;
 }
 .sidebar-space ul {
   margin: 0;
@@ -107,6 +108,7 @@ a:hover.link-effect:before, a:focus.link-effect:before {
   margin: 20px auto;
   position: relative;
   cursor: pointer;
+  opacity: .8;
 }
 .sidebar-space li,
 .sidebar-space span {
@@ -156,6 +158,7 @@ a:hover.link-effect:before, a:focus.link-effect:before {
 }
 
 .sidebar-space .logo {
+  cursor: pointer;
   background: #222C3C;
 }
 .sidebar-space .logo i {
@@ -163,21 +166,21 @@ a:hover.link-effect:before, a:focus.link-effect:before {
 }
 
 .sidebar-space .space-main {
-  background-image: linear-gradient(-1deg, #7D5BE2 0%, #9D8FE3 99%);
+  background-image: linear-gradient(-1deg, #6B45DC 0%, #9682F8 99%);
 }
 .sidebar-space .space-main i {
   background-image: url(../img/main.svg);
 }
 
 .sidebar-space .space-resource {
-  background-image: linear-gradient(0deg, #C8270C 0%, #F45438 100%);
+  background-image: linear-gradient(0deg, #C8270C 0%, #F6674E 100%);
 }
 .sidebar-space .space-resource i {
   background-image: url(../img/resource.svg);
 }
 
 .sidebar-space .space-tool {
-  background-image: linear-gradient(-1deg, #1991EB 2%, #2DA1F8 98%);
+  background-image: linear-gradient(-1deg, #1D79F1 2%, #63A0FF 98%);
 }
 .sidebar-space .space-tool i {
   background-image: url(../img/tool.svg);
@@ -187,11 +190,20 @@ a:hover.link-effect:before, a:focus.link-effect:before {
   background-image: linear-gradient(-1deg, #FF9B00 4%, #FFD000 98%);
 }
 .sidebar-space .space-money i {
+  width: 24px;
+  height: 24px;
   background-image: url(../img/money.svg);
 }
-
+.sidebar-space .space-fun {
+  background-image: linear-gradient(-1deg, #2BA31A 2%, #2CDE5A 98%);
+}
+.sidebar-space .space-fun i {
+  margin-top: 2px;
+  width: 25px;
+  background-image: url(../img/fun.svg);
+}
 .sidebar-sub {
-  background-color: #222C3C;
+  background-color: #1A1E28;
   padding: 10px 30px;
   overflow-y: auto;
 }
@@ -204,15 +216,19 @@ a:hover.link-effect:before, a:focus.link-effect:before {
 }
 .sidebar-sub .category {
   font-weight: 500;
-  font-size: 12px;
-  color: #5B6779;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #FFF;
   margin: 20px 0 14px 0;
   display: block;
 }
 .sidebar-sub .sub-link {
-  border-bottom: 1px solid #2A3547;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   font-weight: 300;
+}
+.sidebar-sub .sub-link:last-child {
+  border-bottom: 0px;
 }
 .sidebar-sub .sub-link li {
   color: #B7C0CD;
@@ -243,7 +259,9 @@ a:hover.link-effect:before, a:focus.link-effect:before {
 .sidebar-content.current {
 	display: block;
 }
-
+.sidebar-space li.current {
+  opacity: 1;
+}
 .sidebar-space li.current:after {
   pointer-events: none;
   position: absolute;
@@ -258,15 +276,14 @@ a:hover.link-effect:before, a:focus.link-effect:before {
   opacity: 1;
   transform: scale(.95);
 }
-.sub-link .tag {
+.sub-link .new_link {
+  background-image: url(../img/link.svg);
+  background-size: contain;
+  width: 10px;
+  height: 10px;
   float: right;
-  color: #A3A9B1;
-  background-color: #475364;
-  border-radius: 100px;
-  padding: 3px 12px;
-  font-size: 10px;
-  font-weight: 500;
-  margin-top: -1px;
+  color: #5B6779;
+  margin-top: 5px;
 }
 
 .welcome-content {
