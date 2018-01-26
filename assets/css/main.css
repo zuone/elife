@@ -1,7 +1,3 @@
-/*!
-* OneUI - v3.1.0 - Auto-compiled on 2017-01-16 - Copyright 2017
-* @author pixelcave
-*/
 
 html, body {
   height: 100%;
@@ -13,13 +9,34 @@ body {
   font-family: "Avenir", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   font-size: 13px;
   color: #222C3C;
-  background-color: #f5f5f5
+}
+
+#body_bg {
+  opacity: 0;
+  background-size: cover;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  background-size: cover;
 }
 
 .no-focus *:focus {
   outline: 0 !important
 }
 
+.bg_white {
+  background-color: #fff !important;
+  animation: 1s fadein;
+  -moz-animation: 1s fadein;	/* Firefox */
+  -webkit-animation: 1s fadein;	/* Safari 和 Chrome */
+  -o-animation: 1s fadein;	/* Opera */
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
 a {
   color: #9AA4BD;
   font-weight: 400;
@@ -82,9 +99,13 @@ a:hover.link-effect:before, a:focus.link-effect:before {
   right: 0;
   position: absolute;
 }
+.iframe-box .fame-bg {
+  background-color: #fff;
+}
 .iframe-box iframe {
   position: absolute;
 }
+
 .sidebar-main {
   display: grid;
   grid-template-columns: 88px 220px;
@@ -203,7 +224,7 @@ a:hover.link-effect:before, a:focus.link-effect:before {
   background-image: url(../img/fun.svg);
 }
 .sidebar-sub {
-  background-color: #1A1E28;
+  background-color: rgba(26, 30, 40, .8);
   padding: 10px 30px;
   overflow-y: auto;
 }
@@ -286,13 +307,40 @@ a:hover.link-effect:before, a:focus.link-effect:before {
   margin-top: 5px;
 }
 
-.welcome-content {
+.basic_info {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  font-weight: 700;
+  width: fit-content;
+}
+.time {
+  width: fit-content;
+  margin: 0 auto;
+}
+#showtime_hours,
+#showtime_minutes {
+  font-family: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-size: 160px;
+  font-weight: 500;
+  color: #fff;
+}
+.colon {
+  font-family: "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-size: 160px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  top: -10px;
+}
+.say_hi {
+  font-family: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-size: 150px;
+  font-weight: 500;
+  color: #fff;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
   font-size: 50px;
-  width: 400px;
-  opacity: .1;
+  margin-top: -30px;
 }
