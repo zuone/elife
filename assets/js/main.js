@@ -8,6 +8,7 @@ if (fameSrc = "welcome.html") {
 }
 
 var background = new Image();
+// background.src = 'https://source.unsplash.com/random/1280x720';
 background.src = './assets/img/bg.jpg';
 background.onload = function () {
     console.log('Background load complete!');
@@ -29,6 +30,14 @@ $(document).ready(function(){
 })
 
 $(function() {
+  $("#home").click(function() {
+    $("#fame").attr("src", $(this).attr("href"));
+    $("#fame").css("display", "block");
+		$("#fame").removeClass('bg_white');
+  });
+});
+
+$(function() {
   $(".sub-link .link").click(function() {
     $("#fame").attr("src", $(this).attr("href"));
     $("#fame").css("display", "block");
@@ -37,20 +46,3 @@ $(function() {
 		$("#fame").addClass('bg_white');
   });
 });
-
-function time(){
-	hoursShow = document.getElementById('showtime_hours');
-	minutesShow = document.getElementById('showtime_minutes');
- 	var date_time = new Date()
-	var hours = date_time.getHours();
-	if(hours<10){
-	 	hours="0"+hours;
-	}
-	var minutes = date_time.getMinutes();
-	if(minutes<10){
-	 	minutes="0"+minutes;
-	}
- 	hoursShow.innerHTML = hours;
-	minutesShow.innerHTML = minutes;
- 	setTimeout(time,1000);
-}

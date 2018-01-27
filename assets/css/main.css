@@ -9,10 +9,13 @@ body {
   font-family: "Avenir", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   font-size: 13px;
   color: #222C3C;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #body_bg {
-  opacity: 0;
+  opacity: 1;
   background-size: cover;
   animation-delay: 0s;
   animation-duration: 1s;
@@ -320,27 +323,67 @@ a:hover.link-effect:before, a:focus.link-effect:before {
 }
 #showtime_hours,
 #showtime_minutes {
-  font-family: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-  font-size: 160px;
-  font-weight: 500;
+  font-family: "Helvetica", "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-size: 150px;
+  font-weight: 900;
   color: #fff;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 .colon {
-  font-family: "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Helvetica", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   font-size: 160px;
   font-weight: 500;
   color: #fff;
   position: relative;
   top: -10px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 .say_hi {
   font-family: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-  font-size: 150px;
-  font-weight: 500;
-  color: #fff;
   color: #fff;
   text-align: center;
   font-weight: 500;
-  font-size: 50px;
-  margin-top: -30px;
+  font-size: 44px;
+  margin-top: -10px;
+}
+.quotes {
+  font-family: TimesNewRomanPS-ItalicMT;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 60px;
+  letter-spacing: 0.67px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  width: 70vw;
+}
+.quotes span {
+  display: block;
+}
+#quotes_author {
+  font-size: 16px;
+  margin-top: 10px;
+}
+#quotes_author:before {
+  content: "- "
+}
+.weather {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #fff;
+}
+.weather .weather_tmp {
+  font-size: 28px;
+  font-weight: 500;
+}
+.weather .weather_cond {
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: -5px;
+}
+.weather .weather_tmp span:last-child {
+  margin-left: -6px;
 }
