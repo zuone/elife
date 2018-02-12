@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="-2.22044605e-14%" y2="3.38788096e-14%" id="linearGradient-1">
+            <stop stop-color="#F57DB1" offset="0%"></stop>
+            <stop stop-color="#F14978" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="10---Performance-Copy-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-34.000000, -961.000000)">
+        <g id="nav-left">
+            <g id="Group-3" transform="translate(29.000000, 955.000000)">
+                <g id="Group-14">
+                    <rect id="Path" x="0" y="0" width="30" height="30"></rect>
+                    <path d="M11,6 C12.5367089,6 13.938487,6.57770713 15,7.52778698 C16.061513,6.57770713 17.4632911,6 19,6 C22.3137085,6 25,8.6862915 25,12 C25,16.5961478 20.6065444,20.8764077 16.0239146,23.8569391 C15.6830796,24.0786174 15.4246198,24.2363452 15.4246198,24.2363452 C15.1923928,24.3808825 14.8112082,24.3828452 14.5783218,24.2383274 C14.5783218,24.2383274 14.337663,24.0916242 14.0071079,23.8770944 C9.4133041,20.8957214 5,16.6065183 5,12 C5,8.6862915 7.6862915,6 11,6 Z" id="Combined-Shape" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                </g>
+                <g id="ui-03" transform="translate(5.000000, 6.000000)"></g>
+            </g>
+        </g>
+    </g>
+</svg>

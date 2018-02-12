@@ -15,6 +15,7 @@ body {
 }
 
 #body_bg {
+  background-image: linear-gradient(180deg, #1A2038 0%, #151A2F 100%);
   opacity: 1;
   background-size: cover;
   animation-delay: 0s;
@@ -41,7 +42,7 @@ body {
     100% { opacity: 1; }
 }
 a {
-  color: #9AA4BD;
+  color: #FFF;
   font-weight: 400;
   text-decoration: none;
   -webkit-transition: color .12s ease-out;
@@ -116,25 +117,36 @@ a:hover.link-effect:before, a:focus.link-effect:before {
   position: fixed;
 }
 .sidebar-space {
+  position: relative;
   height: 100%;
-  background-color: #13171F;
+  background: #222943;
+  z-index: 2;
 }
+
 .sidebar-space ul {
   margin: 0;
   padding: 0;
 }
+.sidebar-space .space-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
 .sidebar-space li {
   display: block;
   box-sizing: border-box;
-  border-radius: 100px;
-  width: 48px;
+  width: 100%;
   height: 48px;
   margin: 20px auto;
   position: relative;
   cursor: pointer;
-  opacity: .8;
 }
-.sidebar-space li,
+.space-top {
+  opacity: .2;
+}
+.space-bottom li:first-child {
+  opacity: .2;
+}
 .sidebar-space span {
   display: block;
   box-sizing: border-box;
@@ -150,29 +162,9 @@ a:hover.link-effect:before, a:focus.link-effect:before {
   cursor: default;
 }
 
-.sidebar-space li:after {
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  content: '';
-  box-sizing: content-box;
-  box-shadow: 0 0 0 3px #fff;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transform: scale(.8);
-  transition: all .2s ease-in-out;
-}
-.sidebar-space li:hover:after {
-  opacity: .6;
-  transform: scale(.9);
-  transition-timing-function: cubic-bezier(0.3, 0.7, 0.1, 1.6);
-}
 .sidebar-space i {
-  height: 22px;
-  width: 22px;
+  height: 20px;
+  width: 20px;
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -183,51 +175,48 @@ a:hover.link-effect:before, a:focus.link-effect:before {
 
 .sidebar-space .logo {
   cursor: pointer;
-  background: #222C3C;
+  background-image: linear-gradient(135deg, #0CB1E6 0%, #23ECA4 100%);
 }
 .sidebar-space .logo i {
+  height: 19px;
+  width: 19px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
   background-image: url(../img/logo.svg);
-}
-
-.sidebar-space .space-main {
-  background-image: linear-gradient(-1deg, #6B45DC 0%, #9682F8 99%);
 }
 .sidebar-space .space-main i {
   background-image: url(../img/main.svg);
 }
 
-.sidebar-space .space-resource {
-  background-image: linear-gradient(0deg, #C8270C 0%, #F6674E 100%);
-}
 .sidebar-space .space-resource i {
   background-image: url(../img/resource.svg);
 }
 
-.sidebar-space .space-tool {
-  background-image: linear-gradient(-1deg, #1D79F1 2%, #63A0FF 98%);
-}
 .sidebar-space .space-tool i {
   background-image: url(../img/tool.svg);
 }
 
-.sidebar-space .space-money {
-  background-image: linear-gradient(-1deg, #FF9B00 4%, #FFD000 98%);
-}
 .sidebar-space .space-money i {
-  width: 24px;
-  height: 24px;
   background-image: url(../img/money.svg);
 }
-.sidebar-space .space-fun {
-  background-image: linear-gradient(-1deg, #2BA31A 2%, #2CDE5A 98%);
-}
+
 .sidebar-space .space-fun i {
-  margin-top: 2px;
-  width: 25px;
   background-image: url(../img/fun.svg);
 }
+
+.sidebar-space .space-log i {
+  background-image: url(../img/log.svg);
+}
+.sidebar-space .space-contact i {
+  background-image: url(../img/contact.svg);
+}
 .sidebar-sub {
-  background-color: rgba(26, 30, 40, .8);
+  background: #1E243D;
+  box-shadow: 0 0 10px 0 rgba(17,21,40,0.49);
   padding: 10px 30px;
   overflow-y: auto;
 }
@@ -239,11 +228,12 @@ a:hover.link-effect:before, a:focus.link-effect:before {
   padding: 0;
 }
 .sidebar-sub .category {
+  font-family: DIN-Bold;
+  font-size: 12px;
+  color: #FFFFFF;
   font-weight: 500;
-  font-size: 10px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #FFF;
   margin: 20px 0 14px 0;
   display: block;
 }
@@ -255,8 +245,11 @@ a:hover.link-effect:before, a:focus.link-effect:before {
   border-bottom: 0px;
 }
 .sidebar-sub .sub-link li {
-  color: #B7C0CD;
-  padding: 5px 0;
+  opacity: 0.4;
+  font-family: DIN-Medium;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 7px 0;
   margin: 8px 0;
 }
 
@@ -289,13 +282,12 @@ a:hover.link-effect:before, a:focus.link-effect:before {
 .sidebar-space li.current:after {
   pointer-events: none;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
+  width: 4px;
+  height: 40px;
+  background-image: linear-gradient(-135deg, #0CB1E6 0%, #23ECA4 100%);
+  box-shadow: 0 0 10px 0 #19D2C1;
   content: '';
-  box-sizing: content-box;
-  box-shadow: 0 0 0 3px #fff;
-  top: 0;
+  top: 4px;
   left: 0;
   opacity: 1;
   transform: scale(.95);
