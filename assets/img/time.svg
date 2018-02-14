@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>tech-25</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0CB1E6" offset="0%"></stop>
+            <stop stop-color="#23ECA4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="10---Performance-Copy-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-906.000000, -345.000000)">
+        <g id="life" transform="translate(524.000000, 134.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="info" transform="translate(382.000000, 112.000000)">
+                <g id="Group-29" transform="translate(0.000000, 96.000000)">
+                    <g id="Group-23">
+                        <g id="Group-24">
+                            <g id="tech-25" transform="translate(0.000000, 3.000000)">
+                                <path d="M9,9.9 L9,5.84871844 C9,5.10384177 9.39947832,4.5 9.9,4.5 C10.3970563,4.5 10.8,5.09852682 10.8,5.84871844 L10.8,9.9 L10.8692308,9.9 L10.8692308,10.8 C10.8692308,11.2970563 10.3167445,11.7 9.6242599,11.7 L7.12958626,11.7 C6.44200779,11.7 5.88461538,11.3005217 5.88461538,10.8 C5.88461538,10.3029437 6.43710168,9.9 7.12958626,9.9 L9,9.9 Z M9,18 C4.02943725,18 0,13.9705627 0,9 C0,4.02943725 4.02943725,0 9,0 C13.9705627,0 18,4.02943725 18,9 C18,13.9705627 13.9705627,18 9,18 Z M9,16 C12.8659932,16 16,12.8659932 16,9 C16,5.13400675 12.8659932,2 9,2 C5.13400675,2 2,5.13400675 2,9 C2,12.8659932 5.13400675,16 9,16 Z" id="Oval"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
