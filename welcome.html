@@ -11,30 +11,80 @@
 
   <link rel="stylesheet" id="css-main" href="assets/css/main.css">
   <script src="assets/js/jQuery.min.js"></script>
+  <script src="assets/js/easypie.js"></script>
 </head>
 
 <body class="welcome" onload="time()">
   <div class="basic_info">
-    <div class="time">
-      <span id="showtime_hours"></span>
-      <span class="colon">:</span>
-      <span id="showtime_minutes"></span>
+    <div class="life_chart">
+      <ul>
+        <li class="chart" id="life_per" data-percent="value"><span id="life_per_number"></span>
+          <div class="inline">%</div>
+          <div class="chart-info">
+            Life has passed
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="say_hi">Keep up the good work.</div>
+    <div class="user_info">
+      <div class="user_name">左子祯</div>
+      <div class="user_age"><span id="age_run"></span> years old</div>
+      <div class="user_data">
+        <span class="time">
+          <i></i><span id="showtime"></span>
+        </span>
+        <span class="weather">
+          <i></i>
+          <span id="weather_tmp"></span>
+          <span>°</span>
+          <span id="weather_cond"></span>
+        </span>
+        <span class="city">
+          <i></i>Beijing
+        </span>
+      </div>
+    </div>
+    <div class="life_time">
+      <div class="life_time_years">
+        <div class="bg_1"></div>
+        <div class="bg_2"></div>
+        <div class="title">Years</div>
+        <div class="years"></div>
+        <div class="info">You still have</div>
+        <div class="years_number"></div>
+        <div class="time_line">
+          <div class="line_years"></div>
+        </div>
+      </div>
+      <div class="life_time_months">
+        <div class="bg_1"></div>
+        <div class="bg_2"></div>
+        <div class="title">Months</div>
+        <div class="months"></div>
+        <div class="info">You still have</div>
+        <div class="months_number"></div>
+        <div class="time_line">
+          <div class="line_months"></div>
+        </div>
+      </div>
+      <div class="life_time_days">
+        <div class="bg_1"></div>
+        <div class="bg_2"></div>
+        <div class="title">Days</div>
+        <div class="days"></div>
+        <div class="info">You still have</div>
+        <div class="days_number"></div>
+        <div class="time_line">
+          <div class="line_days"></div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="weather">
-    <div class="weather_tmp">
-      <span id="weather_tmp"></span>
-      <span>°</span>
-    </div>
-    <div class="weather_cond">
-      <span id="weather_cond"></span>
-    </div>
-  </div>
-  <div class="quotes">
+
+  <!-- <div class="quotes">
     <span id="quotes"></span>
     <span id="quotes_author"></span>
-  </div>
+  </div> -->
 <script src="assets/js/welcome.js"></script>
 </body>
 </html>

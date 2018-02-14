@@ -18,10 +18,10 @@ if (fameSrc = "welcome.html") {
 // }
 
 $(document).ready(function(){
-	$('.sidebar-space li').click(function(){
+	$('.space-top li').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
-		$('.sidebar-space li').removeClass('current');
+		$('.space-top li').removeClass('current');
 		$('.sidebar-content').removeClass('current');
 
 		$(this).addClass('current');
@@ -31,6 +31,14 @@ $(document).ready(function(){
 
 $(function() {
   $("#home").click(function() {
+    $("#fame").attr("src", $(this).attr("href"));
+    $("#fame").css("display", "block");
+		$("#fame").removeClass('bg_white');
+  });
+});
+
+$(function() {
+  $("#space-bottom-btn").click(function() {
     $("#fame").attr("src", $(this).attr("href"));
     $("#fame").css("display", "block");
 		$("#fame").removeClass('bg_white');
