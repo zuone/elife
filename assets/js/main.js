@@ -7,16 +7,6 @@ if (fameSrc = "welcome.html") {
 	obj.style.background = '#fff'
 }
 
-// var background = new Image();
-// // background.src = 'https://source.unsplash.com/random/1280x720';
-// background.src = './assets/img/bg.jpg';
-// background.onload = function () {
-//     console.log('Background load complete!');
-//     var loadbackground = document.getElementById('body_bg');
-//     loadbackground.style.backgroundImage = 'url(' + background.src + ')';
-//     loadbackground.style.animationName = 'fadein';
-// }
-
 $(document).ready(function(){
 	$('.space-top li').click(function(){
 		var tab_id = $(this).attr('data-tab');

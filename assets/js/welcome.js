@@ -1,17 +1,14 @@
-var date_time = new Date();
-var hours = date_time.getHours();
-var years = date_time.getFullYear();
-var months = date_time.getMonth();
-var days = date_time.getDate();
+// Personal Info
 var birth = 1994;
 var lifeSpan = 75;
-var life_years = date_time.getFullYear() - birth;
-var life_per = Math.floor(life_years/lifeSpan*100);
-var years_number = lifeSpan - life_years;
 
-var days_last = new Date(years, months, 0).getDate();
-var month_per = days/days_last;
-
+// Date Time
+var date_time = new Date();
+var minutes = date_time.getMinutes();
+var hours = date_time.getHours();
+var days = date_time.getDate();
+var months = date_time.getMonth();
+var years = date_time.getFullYear();
 var monthArray = new Array(12);
 monthArray[0] = "January";
 monthArray[1] = "February";
@@ -25,47 +22,57 @@ monthArray[8] = "September";
 monthArray[9] = "October";
 monthArray[10] = "November";
 monthArray[11] = "December";
+var monthsEN = monthArray[months];
 
-var months_show = monthArray[months];
+// Life
+var age = years - birth;
+var lifeRest = lifeSpan - age;
+var lifePassed = Math.floor(age/lifeSpan*100);
+var allDays = new Date(years, months, 0).getDate();
+var month_per = days/allDays;
 
+// Date And Age
 function time(){
-	var timeShow = document.getElementById('showtime');
-	var timeRun = document.getElementById('age_run');
- 	var date_time = new Date()
-
-
-	var timerun_ms = date_time.getTime()
-
-	if(hours<	10){
-	 	hours="0"+hours;
-	}
+	var date_time = new Date();
 	var minutes = date_time.getMinutes();
-	if(minutes<10){
-	 	minutes="0"+minutes;
+	var hours = date_time.getHours();
+	var allTime = date_time.getTime();
+	var timeShow = document.getElementById('showtime');
+	var ageRun = document.getElementById('age_run');
+	if(hours<	10){
+	 	hours = "0" + hours;
 	}
-	var t = timerun_ms/1000/60/60/24/365;
+	if(minutes< 10){
+	 	minutes = "0" + minutes;
+	}
+	timeShow.innerHTML = hours + ':' + minutes;
+
+	var t = allTime/1000/60/60/24/365;
 	var y = Math.floor(t) - (birth - 1970);
 	var f = (t- (years - 1970))*365*24*60*60*10;
 	var r = Math.floor(f);
-	timeShow.innerHTML = hours + ':' + minutes;
-	timeRun.innerHTML = y + '.' + r;
+	ageRun.innerHTML = y + '.' + r;
+
  	setTimeout(time,10);
 }
 
-$("#life_per").attr("data-percent",life_per);
+// Per Show
+$("#life_per").attr("data-percent",lifePassed);
 
 $(".years").html(years);
-$(".years_number").html(years_number);
+$(".years_number").html(lifeRest);
 $(".line_years").css("width",months/12*100 +"%");
 
-$(".months").html(months_show);
-$(".months_number").html(years_number*12);
+$(".months").html(monthsEN);
+$(".months_number").html(lifeRest*12);
 $(".line_months").css("width",month_per*100 +"%");
 
 $(".days").html(days + "th");
-$(".days_number").html(years_number*12*30);
+$(".days_number").html(lifeRest*12*30);
 $(".line_days").css("width",hours/24*100 +"%");
 
+
+// Weather API
 $.get('https://free-api.heweather.com/s6/weather/now?location=beijing&lang=en&key=c72a150369f644d39d367ddec7e7292e', function(data, textStatus) {
 	console.log(data);
 	var d = data.HeWeather6[0];
@@ -75,12 +82,7 @@ $.get('https://free-api.heweather.com/s6/weather/now?location=beijing&lang=en&ke
 	$("#weather_cond").html(c);
 });
 
-$.get("https://talaikis.com/api/quotes/random/", function(data) {
-	console.log(data);
-  $("#quotes").html(data.quote);
-	$("#quotes_author").html(data.author);
-});
-
+// EasyPie Chart
 var options = {
   scaleColor: false,
   trackColor: 'rgba(255,255,255,.05)',
