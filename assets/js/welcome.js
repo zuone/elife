@@ -49,11 +49,12 @@ function time(){
 
 	var t = allTime/1000/60/60/24/365;
 	var y = Math.floor(t) - (birth - 1970);
-	var f = (t- (years - 1970))*365*24*60*60*10;
-	var r = Math.floor(f);
+	var s = (years - 1970)*365*24*60*60*1000;
+	var f = t - (years - 1970);
+	var r = Math.floor(f*1000000000);
 	ageRun.innerHTML = y + '.' + r;
 
- 	setTimeout(time,10);
+ 	setTimeout(time,50);
 }
 
 // Per Show
