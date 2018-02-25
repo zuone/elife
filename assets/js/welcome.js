@@ -65,11 +65,11 @@ $(".years_number").html(lifeRest);
 $(".line_years").css("width",months/12*100 +"%");
 
 $(".months").html(monthsEN);
-$(".months_number").html(lifeRest*12);
+$(".months_number").html(lifeRest*12 - months);
 $(".line_months").css("width",month_per*100 +"%");
 
 $(".days").html(days + "th");
-$(".days_number").html(lifeRest*12*30);
+$(".days_number").html(lifeRest*12*30 - months*30 - days);
 $(".line_days").css("width",hours/24*100 +"%");
 
 
