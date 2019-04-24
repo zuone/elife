@@ -1,4 +1,18 @@
 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  border-radius: 0;
+}
+
+
 html, body {
   height: 100%;
   margin: 0;
@@ -34,7 +48,7 @@ body {
          url('../fonts/DINBold.svg#DINBold') format('svg');
 }
 #body_bg {
-  background-image: linear-gradient(180deg, #1A2038 0%, #151A2F 100%);
+  background-color: #1C1E23;
   opacity: 1;
   background-size: cover;
   animation-delay: 0s;
@@ -71,7 +85,18 @@ a {
 .sub-link li {
   position: relative;
 }
+.sub-link .link_tag {
+  background-color: #2D3037;
+  border-radius: 6.25rem;
+  padding: 2px 9px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 12px;
+  color: #7A7C80;
+  position: absolute;
+  right: 0;
 
+}
 .sub-link .active a {
   opacity: 1 !important;
 }
@@ -119,7 +144,7 @@ a:hover.link-effect:before, a:focus.link-effect:before {
 .iframe-box {
   display: block;
   height: 100%;
-  width: calc(100% - 308px);
+  width: calc(100% - 338px);
   right: 0;
   position: absolute;
 }
@@ -132,14 +157,15 @@ a:hover.link-effect:before, a:focus.link-effect:before {
 
 .sidebar-main {
   display: grid;
-  grid-template-columns: 88px 220px;
+  grid-template-columns: 88px 250px;
   height: 100%;
   position: fixed;
 }
 .sidebar-space {
   position: relative;
   height: 100%;
-  background: #222943;
+  background: #22252B;
+  border-right: 1px solid #2C2F36;
   z-index: 2;
 }
 
@@ -234,9 +260,9 @@ a:hover.link-effect:before, a:focus.link-effect:before {
   background-image: url(../img/contact.svg);
 }
 .sidebar-sub {
-  background: #1E243D;
-  box-shadow: 0 0 10px 0 rgba(17,21,40,0.49);
-  padding: 10px 30px;
+  background: #22252B;
+  box-shadow: 0px 0px 10px rgba(17, 21, 40, 0.5);
+  padding: 10px 24px;
   overflow-y: auto;
 }
 
@@ -315,14 +341,15 @@ a:hover.link-effect:before, a:focus.link-effect:before {
   opacity: 1;
   transform: scale(.95);
 }
-.sub-link .new_link {
+.sub-link i {
   background-image: url(../img/link.svg);
   background-size: contain;
   width: 10px;
   height: 10px;
-  float: right;
   margin-top: 5px;
-  opacity: .4;
+  margin-left: 6px;
+  opacity: .5;
+  display: inline-block;
 }
 
 .basic_info {
@@ -371,7 +398,7 @@ a:hover.link-effect:before, a:focus.link-effect:before {
 .life_time_years,
 .life_time_months,
 .life_time_days {
-  background: #1E243D;
+  background: #22252B;
   box-shadow: 0 5px 20px 0 rgba(21,26,49,0.62);
   border-radius: 10px;
   height: 320px;
@@ -594,7 +621,7 @@ a:hover.link-effect:before, a:focus.link-effect:before {
 .log_version {
   font-family: DINBold;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 2px;
 }
 .log_date {
@@ -611,18 +638,21 @@ a:hover.link-effect:before, a:focus.link-effect:before {
 .log_item > span {
   display: block;
   margin: 12px 0;
+  color: rgba(255,255,255, .8)
 }
 .log_item .item_title {
   font-weight: 700;
   font-size: 14px;
   margin-bottom: 2px;
+  color: rgba(255,255,255, .8)
 }
 .log_item .tag {
   font-weight: 500;
   border-radius: 4px;
   padding: 2px 10px;
   margin-right: 8px;
-  background-color: #3B4055;
+  background-color: #2D3037;
+  color: rgba(255,255,255, .8)
 }
 .inline {
   display: inline;
